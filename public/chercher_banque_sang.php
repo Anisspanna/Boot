@@ -934,7 +934,7 @@ main .btn-send:hover {
 											   </div>
 											</article>
 										   <div class="pt-3 text-center">
-										   		<h6>Numéro téléphone : O6 96 56 69 05</h6>
+										   		<h6>Numéro téléphone : '.$data['telephone_donneur_s'].'</h6>
 										   </div>
 
 										   <div class="text-center p-3">
@@ -1159,6 +1159,9 @@ main .btn-send:hover {
         switch (ville) {
             case 'Annaba':
                 return new google.maps.LatLng(36.864235, 7.742628);
+
+			case 'Skikda':
+                return new google.maps.LatLng(36.8796,  6.9094);
             
             default:
                 return new google.maps.LatLng(30.0339, 1.6596); 
@@ -1171,6 +1174,10 @@ main .btn-send:hover {
         case 'Annaba':
             zoomLevel = 12; 
             break;
+		case 'Skikda':
+            zoomLevel = 12; 
+            break;
+
         default:
             zoomLevel = 4.5; 
     }
