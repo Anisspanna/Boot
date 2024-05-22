@@ -920,7 +920,7 @@ main .btn-send:hover {
                                            <i class="icon-tools"></i>
                                        </div>
                                        <div class="service-desc">
-                                           <h4>'.$data['nom_donneur_s'].' ('.$data['nom_donneur_s'].' Maison du don - 13200)</h4>
+                                           <h4>'.$data['nom_donneur_s'].' ( Maison du don - 13200)</h4>
                                            <h5> <img src="images/position.png" alt="position" width="30px"/> <span></span> Banc du Sang</h5>
 										   <article class="d-flex justify-content-evenly pt-3">
 											   <div>
