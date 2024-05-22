@@ -26,13 +26,13 @@ if($_POST['csrf_token']===$_SESSION['ana_hwa'])
 {
     if(time() >= $_SESSION['ana_hwa_time'])
     {
-        unset($_SESSION['ana_hwa']);  //On supprime le token pour
-        unset($_SESSION['ana_hwa_time']);   //empêcher une utilisation future du meme token
+        unset($_SESSION['ana_hwa']);  
+        unset($_SESSION['ana_hwa_time']);   
         $_SESSION['creat']= "Une erreur s'est produite. Veuillez réessayer";
         redirect('renvoyer.php');
     }else
     {
-        unset($_SESSION['ana_hwa']);  //On supprime le token pour
+        unset($_SESSION['ana_hwa']);  
         unset($_SESSION['ana_hwa_time']);  
 
 
@@ -85,7 +85,7 @@ if($_POST['csrf_token']===$_SESSION['ana_hwa'])
                 if($stmt->affected_rows > 0)
                 {
                     $stmt->close();
-                    // Envoie du mail de validation
+                    
 
                     require_once "../core/mailsend.php";
       
