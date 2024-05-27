@@ -241,11 +241,7 @@ if($_POST['csrf_token']===$_SESSION['ana_hwa'])
                 if(isset($_POST['hopitaux']) && !empty($_POST['hopitaux']))
                 {
                      $hop= filtring(mysqli_real_escape_string($connection ,$_POST['hopitaux']));
-                     if(!in_array($hop,$array_h))
-                     {
-                         $error=1;
-                          $_SESSION['e_hopitaux']="Cet hopital n'est pas dans la liste des hopitaux.";
-                     }
+                     
                         
                 }else
                 {

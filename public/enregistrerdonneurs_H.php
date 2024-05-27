@@ -671,7 +671,7 @@ main .btn-send:hover {
     </style>
 	<!-- SIDEBAR -->
 	<section id="sidebar">
-		<a href="#" class="brand"><i class='bx bxs-smile icon'></i> AdminSite</a>
+		<a href="#" class="brand"><i class='bx bxs-smile icon'></i> AdminSite  <?php print_r($array_h); ?></a>
 		<ul class="side-menu">
 			<li><a href="#" class="active"><i class='bx bxs-dashboard icon' ></i> Dashboard</a></li>
 			<li class="divider" data-text="main">Main</li>
@@ -922,8 +922,8 @@ main .btn-send:hover {
                                             <?php foreach($array_h as  $value): ?>
                                             <option value="<?=$value?>"><?=$value?></option>
                                            
+											<?php endforeach; ?>
                                           </select>
-                                          <?php endforeach; ?>
 										<?php if(isset($_SESSION['e_hopitaux'])) echo '<p class="text-danger">'.$_SESSION['e_hopitaux'].'</p>'; unset($_SESSION['e_hopitaux']);?>
 
 										  
